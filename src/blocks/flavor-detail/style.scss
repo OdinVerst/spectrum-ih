@@ -1,5 +1,4 @@
 .flavor-detail {
-	min-height: 1000px;
 	background: url('/images/bg-flavor.png') top no-repeat;
 	background-size: cover;
 }
@@ -27,4 +26,56 @@
 .flavor-detail__item-desc {
 	letter-spacing: 2px;
 	line-height: 1.6;
+}
+
+.flavor-detail__img {
+	max-width: 100%;
+}
+
+@media screen and (max-width: 880px) {
+	.flavor-detail {
+		padding: 0 1em;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.flavor-detail__item {
+		flex-wrap: wrap;
+		margin-top: 0;
+	}
+	.flavor-detail__item-bl {
+		width: 100%;
+	}
+	.flavor-detail--co {
+		flex-direction: column-reverse;
+		z-index: 2;
+		margin-bottom: 3em;
+	}
+}
+@media screen and (max-width: 600px) {
+	.packaging__h {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.packaging__wrapper {
+		flex-wrap: wrap;
+		position: relative;
+		padding-top: 5em;
+	}
+	.packaging__bl {
+		width: 100%;
+	}
+
+	.packaging__img {
+		max-width: 350px;
+	}
+	.packaging__wrapper--co {
+		flex-direction: column-reverse;
+	}
+	.packaging__bl--img {
+		display: flex;
+		justify-content: center;
+	}
 }
