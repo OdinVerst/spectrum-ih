@@ -1,0 +1,18 @@
+.packaging__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.packaging__bl {
+	width: calc(50% - 2em);
+}
+
+.packaging__text {
+	line-height: 1.5;
+	letter-spacing: 1px;
+	&::before {
+		content: '';
+		display: inline-block;
+		width: 1em;
+	}
+}
