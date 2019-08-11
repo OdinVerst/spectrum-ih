@@ -3,3 +3,28 @@
 	background: url('/images/bg-flavor.png') top no-repeat;
 	background-size: cover;
 }
+
+.flavor-detail__item {
+	display: flex;
+	margin-top: -6em;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+.flavor-detail__item-text {
+	max-width: 400px;
+	margin-top: -6em;
+}
+
+.flavor-detail__item-bl {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flavor-detail__item-desc {
+	letter-spacing: 2px;
+	line-height: 1.6;
+}

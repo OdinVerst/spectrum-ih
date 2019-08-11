@@ -1,0 +1,22 @@
+.footer {
+	background: url('/images/bg-footer@2x.png') center top no-repeat;
+	background-size: cover;
+	padding-top: 5em;
+	padding-bottom: 2em;
+}
+
+.footer__copy {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.footer__logo-item {
+	margin-right: 1.5em;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.footer__logo-img {
+	height: 2.5em;
+}
