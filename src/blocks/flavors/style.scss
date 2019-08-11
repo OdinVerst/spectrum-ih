@@ -1,0 +1,9 @@
+.flavor__content {
+	display: flex;
+}
+.flavor__content-bl {
+	margin-right: 3em;
+	&:last-child {
+		margin-right: 0;
+	}
+}
