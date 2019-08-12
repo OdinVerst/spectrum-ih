@@ -59,7 +59,27 @@ body {
 
 @keyframes show {
 	0% {
+		opacity: 1;
+	}
+	50% {
 		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes showMig {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0.25;
+	}
+	50% {
+		opacity: 0.15;
+	}
+	75% {
+		opacity: 0.75;
 	}
 	100% {
 		opacity: 1;

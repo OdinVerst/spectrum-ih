@@ -1,0 +1,63 @@
+.narez__bl--img {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 4em;
+	position: relative;
+	z-index: 2;
+	.packaging__img {
+		width: 320px;
+		z-index: 3;
+	}
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 50%;
+		background: url('/images/cristal.svg') center center no-repeat;
+		background-size: contain;
+		width: 8em;
+		height: 10em;
+		transform: translate(160%, -2em) rotate(45deg);
+		z-index: -1;
+	}
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0%;
+		background: url('/images/cristal.svg') center center no-repeat;
+		background-size: contain;
+		width: 7em;
+		height: 9em;
+		transform: rotate(-90deg);
+		z-index: -1;
+		margin-bottom: 2em;
+	}
+	.cristal {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.narez__bl--img::after {
+		display: none;
+	}
+}
+@media screen and (max-width: 600px) {
+	.narez__bl--img {
+		&:after,
+		&:before,
+		.cristal {
+			display: none;
+		}
+	}
+	.narez__bl--img .packaging__img {
+		max-width: 100%;
+		padding: 0 1em;
+	}
+}

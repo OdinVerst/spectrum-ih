@@ -1,4 +1,3 @@
-
 .nav {
 	width: 100%;
 	display: flex;
@@ -22,11 +21,15 @@
 .nav__item:hover {
 	color: $orange;
 }
+.main {
+	overflow: hidden;
+}
 
 .main__content {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
-	padding: 14em 0 0;
+	padding: 12em 0 0;
 }
 
 .main__content-bl {
@@ -84,6 +87,42 @@
 	}
 }
 
+.cristal-1 {
+	animation: show 0.8s ease-in;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateX(-150%) translateY(var(--ty));
+	will-change: opacity;
+}
+
+.cristal-2 {
+	animation: show 0.8s ease-in;
+	animation-delay: 0.6s;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translateX(-200%) translateY(var(--ty)) rotate(45deg) scale(1.3);
+}
+
+.cristal-3 {
+	animation: show 0.8s ease-in;
+	animation-delay: 0.4s;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateX(150%) translateY(50%) scale(1.5);
+	will-change: opacity;
+}
+
+.cristal-4 {
+	animation: showMig 1.6s ease-in;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transform: translateX(150%) translateY(var(--ty)) rotate(-95deg) scale(1.1);
+}
+
 @media screen and (max-width: 700px) {
 	.main__content {
 		padding-top: 4em;
@@ -95,6 +134,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin-right: 0;
 		&:first-child {
 			margin-bottom: 3em;
 		}

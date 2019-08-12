@@ -1,5 +1,5 @@
 .flavor-detail {
-	background: url('/images/bg-flavor.png') top no-repeat;
+	background: url('/images/bg-flavor2.png') top no-repeat;
 	background-size: cover;
 }
 
@@ -31,6 +31,7 @@
 }
 
 .flavor-detail__img {
+	width: 400px;
 	max-width: 100%;
 }
 
@@ -41,6 +42,9 @@
 }
 
 @media screen and (max-width: 750px) {
+	.flavor-detail__item-text {
+		margin-top: 0;
+	}
 	.flavor-detail__item {
 		flex-wrap: wrap;
 		margin-top: 0;
