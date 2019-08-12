@@ -1,5 +1,14 @@
-import testmodule from "./testmodule";
+import customScrollTo from './smoothScroll';
 
-const test = 5;
-console.log(test);
-testmodule(test);
+const allLinks = document.querySelectorAll('.nav__item-link');
+if (allLinks.length) {
+	[...allLinks].forEach(link => {
+		link.addEventListener('click', e => {
+			e.preventDefault();
+			const href = link.getAttribute('href').slice(1);
+			if (href && document.querySelector(`#${href}`)) {
+				customScrollTo(document.querySelector(`#${href}`).offsetTop);
+			}
+		});
+	});
+}
