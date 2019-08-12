@@ -1,0 +1,11 @@
+.header {
+	background: url(/images/pattern-top.svg) left bottom no-repeat;
+	background-size: cover;
+	padding: 3em 0 5em;
+}
+
+@media screen and (max-width: 600px) {
+	.nav {
+		padding: 0 1em;
+	}
+}
